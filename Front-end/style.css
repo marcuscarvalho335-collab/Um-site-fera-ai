@@ -1,0 +1,50 @@
+:root {
+    --azul-uespi: #0975B3;
+    --amarelo-uespi: #F6C52A;
+    --cinza-uespi: #3D3A38;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--azul-uespi);
+	min-height: 70px;
+}
+
+header nav ul{
+	display: flex;
+	gap: 24px;
+	list-style: none;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.produto-card {
+  background-color: var(--amarelo-uespi);
+  padding: 15px;
+  border: 1px solid;
+}
+
+.botao-cta {
+    background-color: var(--amarelo-uespi);
+    color: var(--cinza-uespi);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
